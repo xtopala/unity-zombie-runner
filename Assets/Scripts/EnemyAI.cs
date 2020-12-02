@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
 
@@ -12,12 +11,14 @@ public class EnemyAI : MonoBehaviour
     bool isProvoked = false;
     Animator animator;
     EnemyHealth health;
+    Transform target;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>().transform;
     }
 
     void Update()
@@ -57,7 +58,6 @@ public class EnemyAI : MonoBehaviour
     private void AttackTarget()
     {
         animator.SetBool("attack", true);
-        Debug.Log(name + " SEEK AND DESTROY " + target.name);
     }
 
     private void ChaseTarget()

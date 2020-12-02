@@ -11,7 +11,6 @@ public class DeathHandler : MonoBehaviour
 
     public void HandleDeath()
     {
-        Debug.Log(gameOverCanvas);
         gameOverCanvas.enabled = true;
         Time.timeScale = 0;
         FindObjectOfType<WeaponSwitcher>().enabled = false;

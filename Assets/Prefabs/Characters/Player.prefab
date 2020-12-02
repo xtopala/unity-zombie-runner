@@ -184,6 +184,8 @@ GameObject:
   - component: {fileID: 7278043339913899223}
   - component: {fileID: 8754044768517909997}
   - component: {fileID: 8722724198750742011}
+  - component: {fileID: 2046552432975026240}
+  - component: {fileID: 173719703134387610}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -350,6 +352,35 @@ MonoBehaviour:
     ammoAmount: 20
   - ammoType: 2
     ammoAmount: 8
+--- !u!114 &2046552432975026240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1da353243062479a9b31c85074a796b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedMaterial: {fileID: 0}
+  waterQuality: 2
+  edgeBlend: 1
+--- !u!114 &173719703134387610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf7acf8d2b576c4f876b4893045f9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1 &4775917797793701917
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: b01ccb79f03fec74e8bf02d46b7a2b55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.45
+      value: 0.5054
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: b01ccb79f03fec74e8bf02d46b7a2b55, type: 3}
       propertyPath: m_LocalRotation.w
@@ -508,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.45
+      value: 0.487
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -602,7 +633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: e44f0db8a020bd2438099c87695638b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4782
+      value: 0.5109
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: e44f0db8a020bd2438099c87695638b1, type: 3}
       propertyPath: m_LocalRotation.w
